@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resumeKateYudenko.css" rel="stylesheet">
+    
+    <script>
+        function scrollToBottom(id) {
+            let element = document.getElementById(id);
+            console.log(element);
+            setTimeout(() => window.scrollTo({left: 0, top: element.offsetTop - 20,  behavior: 'smooth'}), 10);
+        }
+        window.history.scrollRestoration = 'manual'
+    </script>
+</head>
+
+<body>
+    <div class="aboutMe">
+        <br>
+        <img src="kate-square.jpg" style="width: 80%; 
+                                    border-radius: 50%;
+                                    display: block;
+                                    margin-left: auto;
+                                    margin-right: auto">
+        <h2>Kate Yudenko</h2>
+        <ul>
+            <ul>Place of living: Minsk, Belarus</ul>
+            <ul>Occupation: student</ul>
+            <ul>Date of birth: 03.01.2002 (20 y.o.)</ul>
+            
+            <h3>CONTACT</h3>
+            <a href="https://github.com/KateYudenko">
+                <ul>Github</ul>
+            </a>
+            <a href="mailto:eco.yudenkokate@gmail.com">
+                <ul>Mail</ul>
+            </a>
+            <a href="https://t.me/OikawaTooruEnjoyer">
+                <ul>Telegram</ul>
+            </a>
+            <a href="viber://chat?number=%2B375293482321">
+                <ul>Viber</ul>
+            </a>
+            <br>
+        </ul>
+    </div>
+
+    <div class="qualification">
+        <h1>RESUME</h1>
+    
+        <details class="block" open>
+            <summary id="education" onclick="scrollToBottom(this.id)">
+                <h3>EDUCATION</h3>
+            </summary>
+            <li>BSU FAMCS Computer Science Bachelor 2020 - present. </li>
+        </details>
+    
+        <details class="block" open>
+            <summary id="skills" onclick="scrollToBottom(this.id)">
+                <h3>SKILLS</h3>
+            </summary>
+            <li>Basic knowledge of C++ and Java. </li>
+            <li>Had experience with WinApi, Winforms and MFC. </li>
+            <li>Passed Cambridge Advanced English (CAE) test with the result of C1 level in 2020.</li>
+        </details>
+        
+        <details class="block" open>
+            <summary id="experience" onclick="scrollToBottom(this.id)">
+                <h3>EXPERIENCE</h3>
+            </summary>
+            <li>Made a project during my university practice using WinApi, allowing 2 people play chess.</li>
+        </details>
+    
+        <details class="block" open>
+              <summary id="hobbies" onclick="scrollToBottom(this.id)">
+                <h3>HOBBIES</h3>
+            </summary>
+            <li>Cycling</li>
+            <li>Reading scientific and publicistic literature</li>
+            <li>Photography</li>
+            <li>Design</li>
+            <li>Programming</li>
+            <li>Computer Science</li>
+        </details>
+
+    </div>
+</body>
